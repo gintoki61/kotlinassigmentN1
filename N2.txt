@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
         reverseString = reverseString + originalString[i]
     }
 
-    // Case in-sensitive comparision
+  
     if (originalString.equals(reverseString, ignoreCase = true)) {
         println("TRUE")
     } else {
