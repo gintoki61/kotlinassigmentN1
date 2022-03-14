@@ -1,0 +1,17 @@
+fun main(args: Array<String>) {
+    val originalString = "LOL"
+
+    var reverseString = ""
+    var length = originalString.length
+
+    for (i in (length - 1) downTo 0) {
+        reverseString = reverseString + originalString[i]
+    }
+
+    // Case in-sensitive comparision
+    if (originalString.equals(reverseString, ignoreCase = true)) {
+        println("TRUE")
+    } else {
+        println("FALSE")
+    }
+}

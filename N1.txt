@@ -1,0 +1,12 @@
+fun main (args: Array<com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type.String>){
+    var myList = listOf(1,2,4,6,8,9,11)
+    var filteredList = myList.filter {x -> x % 2 == 0}
+    println("even numbers in list: ${filteredList}")
+    var sum = 0.0
+    for (num in filteredList){
+        sum += num
+    }
+    val average = sum / filteredList.size
+    println("the average is : %.2f".format(average))
+
+}
